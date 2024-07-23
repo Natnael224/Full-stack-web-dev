@@ -1,0 +1,108 @@
+.body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ccb758;
+
+}
+.header{
+    padding: 0%;
+    height: 10vh;
+    width: 100%;
+    border-top:2px solid red;
+    border-bottom:2px solid red;
+    border-left:2px solid red;
+    border-right:2px solid red;
+    position: fixed;
+    background-color: aquamarine;
+    display: flex;
+    justify-content:space-between;
+}
+.logo{
+    z-index: 0px;
+    image-resolution:inherit;
+    width: 25%;
+    align-content: center;
+}
+.slogan{
+    z-index: 0px;
+    display: flex;
+    width: 70%;
+    font-style: italic;
+    font-size:var(flex);
+    align-content: center;
+}
+.navigation{
+    z-index: 0px;
+    position: fixed;
+    margin-top: 8vh;
+    background-color: aquamarine;
+    color: rgb(14, 13, 13);
+    padding: 10px;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    font-size:var(flex);
+    justify-content:space-between;
+}
+.home, .whatsnew, .living, .dining, .bedroom, .decor, .collections, .interiordesign, .accounts{
+    width:fit-content;
+    font-size:var(flex);
+    display: inline;
+    align-content: center;
+    font-style: italic;
+    font-family:'Times New Roman';
+}
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 5%;
+    overflow: hidden;
+    margin-top: 15%;
+    z-index: -1px;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+.carousel img:first-child {
+    display: block;
+}
+
+.carousel .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #d9e94e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes slide {
+    0% { opacity: 1; }
+    33% { opacity: 1; }
+    66% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.carousel img:nth-child(1) {
+    animation: slide 9s infinite;
+}
+
+.carousel img:nth-child(2) {
+    animation: slide 9s infinite 3s;
+}
+
+.carousel img:nth-child(3) {
+    animation: slide 9s infinite 6s;
+}
+@media (max-width: 600px) {
+    .body {
+        width: 90%;
+    }
+}
