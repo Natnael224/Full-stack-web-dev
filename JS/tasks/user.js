@@ -1,15 +1,15 @@
-class user{
-    client(firstname, lastname, age, gender){
-        this.firstname = firstname
-        this.lastname = lastname
-        this.age = age
-        this.gender = gender
-    }
+export const pi = 3.14159;
+export const e = 2.71828; //trials for importing
+export function createUser(name, age, occupation) {
+    // Generate a random amount of money between $0 and $50,000
+    const randomMoney = Math.floor(Math.random() * 50000);
+    // Create the user object
+    const user = {
+        name: name,
+        money: randomMoney,
+        Age: age,
+        Occupation: occupation,
+    };
+
+    return user;
 }
-function printfullname(user){
-    console.log(`user's first name ${user.firstname} and last name ${user.lastname}`)
-}
-function printageandgender(user){
-    console.log(`user's age ${user.age} and gender ${user.gender}`)
-}
-export default user
