@@ -1,0 +1,44 @@
+/* Set the height and width of the document */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color:black; /* Consistent text color */
+    background-color:aquamarine; /* Background color for body and table */
+}
+
+/* Background color for body and table */
+body {
+    background-color:aquamarine;
+}
+
+table {
+    background-color:darkcyan;
+}
+
+/* Fixed position header */
+.fixed-header {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color:darkolivegreen;
+    padding: 10px;
+    border: 5px dotted red; /* Red dotted border */
+}
+
+/* Matching color for all p tags */
+p {
+    color:black;
+}
+
+/* Padding and margin usage */
+h2 {
+    margin-left: 20px;
+}
+
+h3 {
+    padding-left: 50%;
+}
