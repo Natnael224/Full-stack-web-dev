@@ -17,7 +17,7 @@ let person={
     }
 }
 console.log('first name :'+person.firstname);
-console.log('city :'+person.adress.street);
+console.log('street :'+person.adress.street);
 //task #3
 let Array= ['apple', 'banana', 'orange', 'grape', 'pear'];
 console.log('second item:'+Array[1]);
@@ -28,7 +28,7 @@ Array[6]='Item listed here';
 console.log('Most recently added item:' +Array[6]);
 //task #4
 function printNumbers(n) {
-  for (let a = 0; a <= n; a++) {
+  for (let a = 1; a <= n; a++) {
       if (a % 3 === 0 && a % 5 === 0) {
           console.log("FizzBuzz");
       } else if (a % 3 === 0) {
@@ -40,7 +40,7 @@ function printNumbers(n) {
       }
   }
 }
-printNumbers(20);
+printNumbers(10);
 //task #5
 let Numbers= [ ];
 console.log('first console log:', Numbers);
@@ -79,5 +79,4 @@ function printPattern(n) {
   }
 }
 
-// Example usage:
-printPattern(5);
+printPattern(10);
