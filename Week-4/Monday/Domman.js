@@ -15,3 +15,26 @@ const newH1 = document.createElement('h1');
 newH1.title = 'hi everyone'; 
 newH1.textContent = 'hi everyone'; 
 document.body.appendChild(newH1);
+// Add a p tag with a span inside
+var p = document.createElement('p');
+p.style.backgroundColor = 'red';
+p.style.color = 'white';
+var span = document.createElement('span');
+var strong = document.createElement('strong');
+strong.innerText = 'this is a very strong text';
+span.appendChild(strong);
+p.appendChild(span);
+div.appendChild(p);
+// Create a div with 3 span children
+var parentDiv = document.createElement('div');
+for (var i = 1; i <= 3; i++) {
+    var spanChild = document.createElement('span');
+    spanChild.id = 'span' + i;
+    spanChild.innerText = 'span tag';
+    spanChild.style.color = 'red';
+    parentDiv.appendChild(spanChild);
+}
+// Remove the 2nd span tag
+var span2 = document.getElementById('span2');
+parentDiv.removeChild(span2);
+document.body.appendChild(parentDiv);
