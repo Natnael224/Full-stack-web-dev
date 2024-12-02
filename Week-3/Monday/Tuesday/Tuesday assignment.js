@@ -12,7 +12,7 @@ let person={
     age : 30,
     adress :{
             street : '1234st',
-            city : 'AddisAbaba',
+            city : 'Addis Ababa',
             postalcode : '1000',
     }
 }
