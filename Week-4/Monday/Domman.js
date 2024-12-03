@@ -16,7 +16,7 @@ newH1.title = 'hi everyone';
 newH1.textContent = 'hi everyone'; 
 document.body.appendChild(newH1);
 // Add a p tag with a span inside
-var p = document.createElement('p');
+const p = document.createElement('p');
 p.style.backgroundColor = 'red';
 p.style.color = 'white';
 var span = document.createElement('span');
@@ -24,7 +24,7 @@ var strong = document.createElement('strong');
 strong.innerText = 'this is a very strong text';
 span.appendChild(strong);
 p.appendChild(span);
-div.appendChild(p);
+document.body.appendChild(p);
 // Create a div with 3 span children
 var parentDiv = document.createElement('div');
 for (var i = 1; i <= 3; i++) {

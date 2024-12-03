@@ -102,7 +102,7 @@ section {
 
 .form-container button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: greenyellow;
     color: white;
     border: none;
     border-radius: 5px;
@@ -123,6 +123,10 @@ footer {
 }
 .logo { 
     animation: logoAnimation 6s infinite; 
+}
+#mousePosition {
+  margin-top: 20px;
+  font-size: 18px;  
 } 
 @keyframes logoAnimation { 
     0% { transform: rotate(0deg); } 
@@ -174,7 +178,7 @@ footer {
 }
 .center { 
     position: absolute;
-    margin-top: 150%; 
+    margin-top: 200%; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
